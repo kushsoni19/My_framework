@@ -1,0 +1,28 @@
+{
+  "name": "browser",
+  "version": "1.0.0",
+  "main": "framework.mjs",
+  "type": "module",
+  "scripts": {
+    "start": "node framework.mjs",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "selenium": "node scripts/selenium-script.mjs",
+    "puppeteer": "node scripts/puppeteer-script.mjs",
+    "test": "npm run selenium && npm run puppeteer && npm run cypress:run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cypress": "^13.12.0",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "puppeteer": "^22.12.0",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
+    "random-useragent": "^0.5.0",
+    "selenium-webdriver": "^4.22.0"
+  }
+}
